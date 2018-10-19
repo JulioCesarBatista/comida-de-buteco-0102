@@ -22,21 +22,29 @@ a:hover{
 .menu li{
     /* background-color: brown; */
     display: inline;
-    padding-left: 12px;
+    padding-left: 40px;
+
 }
 
+
+/* Aqui eu usei display flex no menu */
 .menu{
     background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .menu img{
-    height: 100px;
-    width: 100px;
+    /* height: 100px; */
+    width: 15%;
+    margin-top: -10px;
 }
 
 .estilo-imagem{
     border: solid #FF4C0D 2px;
-    border-radius: 60%;
+    border-radius: 20%;
 }
 
 .banner > h1{
@@ -52,10 +60,11 @@ a:hover{
 }
 
 .banner{
-    padding-top: 185px;
-    padding-bottom: 185px;
-    background-image: url('../images/comida1.jpg');
+    padding-top: 210px;
+    padding-bottom: 210px;
+    background-image: url('../images/tomate.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     margin-top: -16px;
     margin-bottom: 20px;
 }
@@ -63,9 +72,47 @@ a:hover{
 #receita-bolovo{
     margin: 10px;
 
+}
 
+.container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: row wrap;
+}
+
+.container-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-flex > div > h2{
+    text-align: center;
+}
+
+.sobre-bolovo{
+    margin:50px;
 }
 
 footer{
     background-color: brown;
+}
+
+.mapa_baixo{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+footer > div > div > ol li:first-child{
+    font-weight: bold;
+}
+
+/* .mapa_baixo > .info > ol >li:nth-child(4){
+    color: blue;
+} */
+
+.menu > ul > li:last-child{
+    font-weight: bold;
 }
